@@ -26,6 +26,7 @@ class CustomTextStyle {
   static get bodyMediumKantumruyGray600 =>
       theme.textTheme.bodyMedium!.kantumruy.copyWith(
         color: AppColors.gray600,
+
       );
   static get bodyMediumKantumruyOnPrimary =>
       theme.textTheme.bodyMedium!.kantumruy.copyWith(
@@ -69,11 +70,31 @@ class CustomTextStyle {
         color: Colors.white,
         fontSize: 45,
         fontWeight: FontWeight.w400,
+      ); static get kaisei_400_48 =>
+      theme.textTheme.displayMedium!.kaiseiTokumin.copyWith(
+        color: Colors.white,
+        fontSize: 48,
+        fontFamily: "Kaisei Decol",
+        fontWeight: FontWeight.w400,
       );
   static get kaisei_400_16 =>
       theme.textTheme.displayMedium!.kaiseiTokumin.copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w400,
+        fontFamily: "Kantumruy"
+      );
+  static get kaisei_400_16Grey =>
+      theme.textTheme.displayMedium!.kaiseiTokumin.copyWith(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.black11,
+        fontFamily: "Kantumruy"
+      );
+  static get kaisei_300_8White =>
+      theme.textTheme.displayMedium!.kaiseiTokumin.copyWith(
+        fontSize: 8,
+        color: AppColors.whiteA700,
+        fontWeight: FontWeight.w300,
         fontFamily: "Kantumruy"
       );
   static get displayMediumOnPrimary => theme.textTheme.displayMedium!.copyWith(
@@ -104,17 +125,69 @@ class CustomTextStyle {
         fontWeight: FontWeight.w700,
         fontFamily: "Kaisei Tokumin"
       );
+  static get kaiseiDecol_700_16 =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
+        fontSize: 16,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol"
+      );
+  static get kaisei_700_40 =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
+        fontSize: 40,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Tokumin"
+      );
+  static get kaisei_700_50_black =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: Color(0xff332F32),
+        fontSize: 50,
+        fontWeight: FontWeight.w700,
+        
+        fontFamily: "Kaisei Tokumin"
+      );
   static get kaiseiDecol_700_40 =>
       theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
         fontSize: 40,
         fontWeight: FontWeight.w700,
         fontFamily: "Kaisei Decol"
-      );static get kaiseiDecol_400_11 =>
+      );
+  static get kaiseiDecol_700_40Black =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: Colors.black,
+        fontSize: 40,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol"
+      );static get kaiseiDecol_700_20Black =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: Colors.black,
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol"
+      );
+  static get kaiseiDecol_400_11 =>
       theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
         color: theme.colorScheme.onPrimaryContainer,
         fontSize: 11,
         fontWeight: FontWeight.w400,
+        fontFamily: "Kaisei Decol"
+      );
+  static get kaiseiDecol_400_11Black =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: Color(0xff25242A),
+        fontSize: 11,
+        fontWeight: FontWeight.w400,
+        fontFamily: "Kaisei Decol"
+      );
+
+  static get kaiseiDecol_400_12White =>
+      theme.textTheme.headlineLarge!.kaiseiTokumin.copyWith(
+        color: Colors.white,
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+
         fontFamily: "Kaisei Decol"
       );
   static get kaiseiDecol_700_11 =>

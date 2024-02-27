@@ -437,10 +437,44 @@ class CustomTextStyles {
         fontWeight: FontWeight.w700,
       );
 
-  static get titleMediumWhiteA700Bold_1 =>
+  static get white700_22_kaisei =>
       theme.textTheme.titleMedium!.copyWith(
         color: AppColors.whiteA700,
         fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol",
+        fontSize: 30
+      );static get black700_40_kaisei =>
+      theme.textTheme.titleMedium!.copyWith(
+        color: AppColors.black900,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol",
+        fontSize: 40
+      );static get black700_20_kaisei =>
+      theme.textTheme.titleMedium!.copyWith(
+        color: AppColors.black900,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol",
+        fontSize: 20
+      );static get black700_16_kaisei =>
+      theme.textTheme.titleMedium!.copyWith(
+        color: AppColors.black900,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Kaisei Decol",
+        fontSize: 16
+      );
+  static get white400_11_kaisei =>
+      theme.textTheme.titleMedium!.copyWith(
+        color: AppColors.whiteA700,
+        fontWeight: FontWeight.w400,
+        fontFamily: "Kaisei Decol",
+        fontSize: 11
+      );
+  static get grey400_11_kaisei =>
+      theme.textTheme.titleMedium!.copyWith(
+          color: const Color(0xff332F32),
+        fontWeight: FontWeight.w400,
+        fontFamily: "Kaisei Decol",
+        fontSize: 11
       );
 
   static get titleMediumWhiteA700ExtraBold =>

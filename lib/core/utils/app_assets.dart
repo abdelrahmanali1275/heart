@@ -25,7 +25,7 @@ class AppAssets {
 
   static String imgFaceId1 = '$imagePath/img_face_id_1.png';
 
-  static String imgImage11 = '$imagePath/img_image_1_1.png';
+  static String imgImage11 = '$imagePath/img_wallaper.png';
 
   // HealthPage images
   static String imgGroup24 = '$imagePath/img_group_24.svg';

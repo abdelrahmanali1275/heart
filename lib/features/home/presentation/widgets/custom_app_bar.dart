@@ -19,34 +19,35 @@ class CustomAppBar extends StatelessWidget {
         ),
         Row(
           children: [
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  color: AppColors.primary,
+                ),
+                child: Row(
+                  children: [
+                    const CircleAvatar(
+                      radius: 15,
+                    ).paddingAll(5),
+                    Text(
+                      "Ahmed Sayed",
+                      style: CustomTextStyle.kaisei_400_16,
+                    )
+                  ],
+                ),)),
             Container(
-              width: MediaQuery.of(context).size.width * .65,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                color: AppColors.primary,
-              ),
-              child: Row(
-                children: [
-                  const CircleAvatar(
-                    radius: 15,
-                  ).paddingAll(5),
-                  Text(
-                    "Abdelrahman Ali",
-                    style: CustomTextStyle.kaisei_400_16,
-                  )
-                ],
-              ),
-            ),
-            Container(
-                padding: const EdgeInsets.all(9),
+                padding: const EdgeInsets.all(5),
                 margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     color: AppColors.primary,
-                    borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(25)),
                 child: const Icon(
                   CupertinoIcons.bell,
                   color: Colors.black,
-                ))
+                ).paddingSymmetric(horizontal: 3)),
+
+
           ],
         )
       ],

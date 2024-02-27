@@ -12,18 +12,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-          width: double.infinity,
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                Color(0xff25242A),
-                Color(0xff736456),
-              ],
-                  begin: AlignmentDirectional.topCenter,
-                  end: AlignmentDirectional.bottomCenter)),
-          child: const HomeScreenBody()),
-    );
+    return const HomeScreenBody();
   }
 }

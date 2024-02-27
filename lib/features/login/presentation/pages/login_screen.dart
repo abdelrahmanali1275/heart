@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:heart/features/login/presentation/manager/login_cubit.dart';
 
 import '../../../../core/utils/app_assets.dart';
 import '../widgets/login_screen_body.dart';
@@ -8,7 +10,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -18,7 +20,11 @@ class LoginScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: const LoginScreenBody()),
+          child: BlocProvider(
+            create: (context) => LoginCubit(),
+            child: const LoginScreenBody(),
+          )
+      ),
     );
   }
 }

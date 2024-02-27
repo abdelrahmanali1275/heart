@@ -63,6 +63,6 @@ class _HomeScreenBodyState extends State<HomeScreenBody>
           ],
         ))
       ],
-    ).paddingAll(30);
+    ).paddingSymmetric(horizontal: 30,vertical: 20);
   }
 }

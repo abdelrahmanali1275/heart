@@ -8,6 +8,7 @@ class AppColors {
 
   // Black
   static Color get black900 => const Color(0XFF000000);
+  static Color get black11 => const Color(0xff25242A);
 
   // Blue
   static Color get blue50 => const Color(0XFFEAF8FA);
@@ -86,6 +87,8 @@ class AppColors {
   static Color get greenA70001 => const Color(0XFF05B70C);
   static Color get greenA70002 => const Color(0XFF02B214);
   static Color get greenA70003 => const Color(0XFF01CF09);
+  static Color get green800 => const Color(0XFF6DB234);
+
 
   // LightBlueB
   static Color get lightBlue100B9 => const Color(0XB9C3F7FF);
@@ -118,4 +121,5 @@ class AppColors {
 
   // White
   static Color get whiteA700 => const Color(0XFFFFFFFF);
+  static Color get white8 => const Color(0xffD9D9D9);
 }
